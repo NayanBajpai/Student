@@ -9,18 +9,19 @@ import com.example.Student.entity.Student;
 import com.example.Student.repository.StudentRepository;
 
 @SpringBootApplication
-public class StudentApplication implements CommandLineRunner{
+//public class StudentApplication implements CommandLineRunner{
+public class StudentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
 	}
 	
-	@Autowired
-	private StudentRepository studentRepository;
-	
-	@Override
-	public void run(String... args) throws Exception {
-		
+//	@Autowired
+//	private StudentRepository studentRepository;
+//	
+//	@Override
+//	public void run(String... args) throws Exception {
+//		
 //		Student student1 = new Student("Nayan", 23L, 1000L);
 //		studentRepository.save(student1);
 //		
@@ -29,7 +30,7 @@ public class StudentApplication implements CommandLineRunner{
 //		
 //		Student student3 = new Student("Ayush", 23L, 1000L);
 //		studentRepository.save(student3);
-		
-	}
+//		
+//	}
 
 }
